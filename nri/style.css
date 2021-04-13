@@ -145,6 +145,11 @@ section .section-img img {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
+.trans img {
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+}
 
 .link {
   margin-top: 60px;
@@ -355,13 +360,6 @@ aside {
   margin-right: 10px;
 }
 
-.bold {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-  color: black;
-}
-
 footer {
   height: 200px;
   border-top: 1px solid #c7bcbc;
@@ -426,3 +424,4 @@ body {
   font-size: 2rem;
   color: white;
 }
+/*# sourceMappingURL=style.css.map */
