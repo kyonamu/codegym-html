@@ -1,0 +1,82 @@
+$sp: 770px;  // スマホ
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+  }
+
+  aside{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .aside-title{
+    border-top: 2px solid;
+    border-bottom: 1px solid rgb(214, 202, 202);
+    padding: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  .aside-box{
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(214, 202, 202);
+    h3{
+      font-size: 1rem;
+    }
+    ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+      a{
+        text-decoration: none;
+        color: #0c419a;
+        font-size: 0.9rem;
+        &:hover{
+          border-bottom: 1px solid;
+        }
+      }
+      span{
+        color: gray;
+        margin-right: 10px;
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  .return{
+    padding: 70px 0;
+    span{
+      color: gray;
+      margin-right: 10px;
+      font-size: 0.5rem;
+    }
+    a{
+      text-decoration: none;
+      color: #0c419a;
+      &:hover{
+        border-bottom: 1px solid;
+      }
+    }
+  }
+
+  .sns-box{
+    padding: 30px 0;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    .wrapper{
+        width: 350px;
+    margin: 0 auto;
+    i{
+      font-size: 2rem;
+    }
+    }
+  }
+
+  .youtube{
+    color: red;
+  }

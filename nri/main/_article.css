@@ -1,0 +1,53 @@
+.article-grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  gap: 50px;
+  padding: 30px 80px 60px;
+}
+
+.article-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.article-grid ul li {
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 2.3rem;
+}
+
+.article-grid ul span {
+  font-size: 0.5rem;
+  margin-right: 8px;
+  color: #333;
+  font-weight: normal;
+}
+
+.article-grid a {
+  text-decoration: none;
+  color: #333;
+}
+
+.article-grid a:hover {
+  border-bottom: 1px solid;
+}
+
+.sitemap {
+  padding: 40px 80px;
+}
+
+.sitemap a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.sitemap a:hover {
+  border-bottom: 1px solid;
+}
+
+.sitemap a span {
+  font-size: 0.5rem;
+  color: #333;
+  margin-right: 10px;
+}
