@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>家具屋 | HOME</title>
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,11 +22,11 @@
   </header>
   <main>
     <div class="big-bg">
-      <h2 class="title">We propose a life.</h2>
+      <h2 class="main-title">We propose a life.</h2>
     </div>
     <article class="self-introduction">
       <img src="./img/concept.png" alt="家具の写真">
-      <div>
+      <div class="description">
         <h3>暮らしを提案する。</h3>
         <p>私たちは、家具を売るのではなく、お客様の理想とする<br> 「暮らし」を提案します。<br> 仕事で疲れた後に帰りたくなる、<br> 今日も１日頑張ろうと思える、<br>
           そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
@@ -34,26 +36,33 @@
       <h3>NEWS</h3>
       <div class="wrapper">
         <div class="topic">
-          <img src="./img/news01.png" alt="ソファーの写真">
+          <p class="filter">
+            <img src="./img/news01.png" alt="ソファーの写真">
+          </p>
           <p>アームストロングのカウチ入荷</p>
         </div>
-        <div>
-          <img src="./img/news02.png" alt="椅子の写真">
+        <div class="topic">
+          <p class="filter">
+            <img src="./img/news02.png" alt="椅子の写真">
+          </p>
           <p>アームストロングのチェア再入荷</p>
         </div>
-        <div>
-          <img src="./img/news03.png" alt="テーブルの写真">
+        <div class="topic">
+          <p class="filter">
+            <img src="./img/news03.png" alt="テーブルの写真">
+          </p>
           <p>アームストロングのテーブル入荷</p>
         </div>
       </div>
-      <a href="news.html">view more&gt;</a>
+      <a href="news.html">view more&ensp;<span>&gt;</span></a>
     </section>
-    <article>
+    <article class="catalog-download">
       <h3>公式カタログ</h3>
       <p>様々なスタイルをご提案いたします。オーダーメイドも可能です。<br> 詳しくはカタログをご覧ください。</p>
       <a href="./sample.pdf" download="カタログ.pdf" target="_blank">カタログをダウンロード</a>
     </article>
     <section class="contact">
+      <h3>CONTACT</h3>
       <form action="#" method="POST">
         <input type="text" placeholder="お名前">
         <input type="text" placeholder="メールアドレス">
@@ -64,17 +73,19 @@
     <section class="recruit">
       <h3>RECRUIT</h3>
       <p>現在Staffを募集しております。<br> 詳しくは詳細ページをご覧ください。</p>
-      <a href="./recruit.html">view more&gt;</a>
+      <a href="./recruit.html">view more&ensp;<span>&gt;</span></a>
     </section>
   </main>
   <footer>
-    <img src="./img/logo_footer.png" alt="ロゴ">
-    <ul class="footer-nav">
-      <li>HOME</li>
-      <li><a href="./news.html">NEWS</a></li>
-      <li><a href="./recruit.html">RECRUIT</a></li>
-      <li><a href="./contact.html">CONTACT</a></li>
-    </ul>
+    <div class="wrapper">
+      <img src="./img/logo_footer.png" alt="ロゴ">
+      <ul class="footer-nav">
+        <li>HOME</li>
+        <li><a href="./news.html">NEWS</a></li>
+        <li><a href="./recruit.html">RECRUIT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
     <small>&copy;HTMLCSS.code</small>
   </footer>
 </body>
