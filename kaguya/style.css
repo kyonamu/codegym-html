@@ -28,15 +28,22 @@ header {
   justify-content: space-between;
   list-style: none;
   align-items: center;
+  font-weight: bold;
 }
 
 .header-nav li{
   margin-right: 56px;
+  color:#3B3B3B;
 }
 
 .header-nav li a{
   text-decoration: none;
   color: #B2B2B2;
+}
+
+.header-nav li a:hover{
+  color: #3B3B3B;
+  transition: 0.5s;
 }
 
 /* top背景画像 */
@@ -69,7 +76,7 @@ header {
 }
 
 .self-introduction .description{
-  margin-right: 20%;
+  margin-left: 56px;
   margin-top: 240px;
 }
 
@@ -126,7 +133,11 @@ header {
   text-align: center;
   font-size: 1.8rem;
   display: block;
-  
+}
+
+.news a:hover{
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 .news a span{
@@ -161,6 +172,12 @@ header {
   padding: 10px 50px;
 }
 
+.catalog-download a:hover{
+  background-color: #707070;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
 /* contact */
 .contact{
   text-align: center;
@@ -177,6 +194,7 @@ form{
   align-items: center;
   margin: 0 auto;
   margin-bottom: 240px;
+  width: 454px;
 }
 
 form input{
@@ -186,18 +204,20 @@ form input{
   opacity: 0.6;
   padding: 10px 0 10px 16px;
   outline: none;
-  width: 454px;
+  width: 100%;
+  font: normal 12px Noto Sans;
 }
 
 form textarea{
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
+  font: normal 12px Noto Sans;
   margin-bottom: 40px;
   padding: 10px 16px 0;
   outline: none;
-  width: 444px;
   resize: none;
+  width: 100%;
 }
 
 form input:last-child{
@@ -205,6 +225,12 @@ form input:last-child{
   border: none;
   background: #D1D1D1;
   cursor: pointer;
+}
+
+form input:last-child:hover{
+  background-color: #707070;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
 /* recruit */
@@ -231,6 +257,11 @@ form input:last-child{
   text-align: center;
   font-size: 1.8rem;
   display: block;
+}
+
+.recruit a:hover{
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 .recruit a span{
@@ -263,6 +294,11 @@ footer .wrapper{
 .footer-nav li a{
   text-decoration: none;
   color: #ffffff;
+}
+
+.footer-nav li a:hover{
+  color: #cabd9f;
+  transition: 0.5s;
 }
 
 
