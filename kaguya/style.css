@@ -27,14 +27,21 @@ header {
   justify-content: space-between;
   padding: 0 40px;
   font-size: 1.6rem;
+  align-items: center;
+  height: 56px;
+}
+
+header h1{
+  margin: 0;
 }
 
 .header-nav{
   display: flex;
   justify-content: space-between;
   list-style: none;
-  align-items: center;
   font-weight: bold;
+  margin: 0;
+  padding-top: 16px;
 }
 
 .header-nav li{
@@ -101,6 +108,7 @@ header {
   color: #918F89;
   font-size: 3rem;
   padding: 192px 0 0 228px;
+  margin: 0;
 }
 
 .white{
@@ -137,6 +145,11 @@ header {
   margin: 0  auto;
   margin-bottom: 240px;
   padding: 0 96px;
+}
+
+.main-news{
+  /* news.htmlのスタイル */
+  margin-bottom: 320px;
 }
 
 .news h3{
@@ -224,6 +237,12 @@ header {
 /* contact */
 .contact{
   text-align: center;
+  margin-bottom: 240px;
+}
+
+.main-contact{
+  /* contact.htmlのスタイル */
+  margin-bottom: 320px;
 }
 
 .contact h3{
@@ -232,12 +251,19 @@ header {
   letter-spacing: 2.4px;
 }
 
+.contact p{
+  font-size: 1.5rem;
+  letter-spacing: 0.6px;
+  color: #3B3B3B;
+  font-weight: 800;
+  margin-bottom: 72px;
+}
+
 form{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 240px;
   width: 454px;
 }
 
@@ -334,6 +360,68 @@ form input:last-child:hover{
   font-size: 1.5rem;
 }
 
+/* recruit.htmlのスタイル */
+.main-recruit{
+  margin-bottom: 320px;
+}
+
+.table-title{
+  background-color: #d6d6d6;
+}
+
+.main-recruit table{
+  width: 640px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #707070;
+  height: 624px;
+}
+
+.main-recruit table tbody td {
+  border: 1px solid #707070;
+  font-size: 1.6rem;
+  text-align: left;
+  padding: 10px 0 10px 60px;
+}
+
+.main-recruit h4{
+  font-size: 1.6rem;
+  margin: 0 0 3px 0;
+}
+
+.main-recruit ul,p{
+  font-size: 1.4rem;
+  color: #3B3B3B;
+  font-weight: bold;
+  margin: 0;
+}
+
+.main-recruit p{
+  margin: 0;
+  line-height: 22px;
+}
+
+.table-default-list{
+  list-style: none;
+  padding: 0;
+  line-height: 25px;
+  padding-left: 15px;
+}
+
+.table-default-list li:before {
+	content: '';
+	width: 2px;
+	height: 2px;
+	display: inline-block;
+  border-radius: 100%;
+  background: black;
+	position: relative;
+	left: -7px;
+	top: -3px;
+}
+
 /* footer */
 footer{
   background: #918F89;
@@ -344,11 +432,17 @@ footer{
 
 footer .wrapper{
   margin-bottom: 57px;
+  height: 40px;
+}
+
+footer .wrapper img{
+  height: 100%;
 }
 
 .footer-nav{
   display: flex;
   list-style: none;
+  margin: 0;
 }
 
 .footer-nav li{
