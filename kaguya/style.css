@@ -27,14 +27,21 @@ header {
   justify-content: space-between;
   padding: 0 40px;
   font-size: 1.6rem;
+  align-items: center;
+  height: 56px;
+}
+
+header h1{
+  margin: 0;
 }
 
 .header-nav{
   display: flex;
   justify-content: space-between;
   list-style: none;
-  align-items: center;
   font-weight: bold;
+  margin: 0;
+  padding-top: 16px;
 }
 
 .header-nav li{
@@ -101,6 +108,7 @@ header {
   color: #918F89;
   font-size: 3rem;
   padding: 192px 0 0 228px;
+  margin: 0;
 }
 
 .white{
@@ -395,10 +403,23 @@ form input:last-child:hover{
   line-height: 22px;
 }
 
-.main-recruit ul{
+.table-default-list{
   list-style: none;
   padding: 0;
   line-height: 25px;
+  padding-left: 15px;
+}
+
+.table-default-list li:before {
+	content: '';
+	width: 2px;
+	height: 2px;
+	display: inline-block;
+  border-radius: 100%;
+  background: black;
+	position: relative;
+	left: -7px;
+	top: -3px;
 }
 
 /* footer */
@@ -411,11 +432,17 @@ footer{
 
 footer .wrapper{
   margin-bottom: 57px;
+  height: 40px;
+}
+
+footer .wrapper img{
+  height: 100%;
 }
 
 .footer-nav{
   display: flex;
   list-style: none;
+  margin: 0;
 }
 
 .footer-nav li{
