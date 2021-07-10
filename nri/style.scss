@@ -1,0 +1,34 @@
+@use './main/header'; //header.scss
+@use './main/section';//section.scss
+@use './main/aside'; //aside.scss
+@use './main/article'; //article.scss
+@use './main/footer'; //footer.scss
+
+body{
+  margin: 0;
+  position: relative;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 60px;
+  background-color: black;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 60px;
+  position: fixed;
+  cursor: default;
+  i{
+    font-size: 2rem;
+    color: white;
+  }
+}
+

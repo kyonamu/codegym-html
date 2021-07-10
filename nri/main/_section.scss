@@ -1,0 +1,132 @@
+$sp: 770px;  // スマホ
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+  }
+
+  section{
+    width: 60%;
+    margin: 0 auto;
+    h2{
+      height: 70px;
+      line-height: 70px;
+      font-size: 1.5rem;
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+    p{
+      margin-bottom: 35px;
+      line-height: 2rem;
+    }
+    .section-img{
+      width: 100%;
+      margin: 0 auto;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .trans-box{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+ .trans{
+   background-color: #0c419a;
+   color: white;
+   text-decoration: none;
+   text-align: center;
+    display: inline-block!important;
+    font-size: 1rem;
+    padding: 15px 20px;
+    &:hover{
+      opacity: 0.8;
+      transition: 0.8s;
+    }
+    img{
+      width: 15px;
+      height: 15px;
+    }
+ } 
+
+ .link {
+   margin-top: 60px;
+   a{
+   text-decoration: none;
+   color: #0c419a;
+   }
+   span{
+     color: black;
+   }
+ }
+
+ .strengths{
+   background-color:  #deecf8;
+   padding: 30px 20px 50px;
+   margin-top: 40px;
+ }
+
+ .section-list{
+   list-style: none;
+   padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+   li{ 
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 2px gray;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    &:hover{
+      background-color: rgb(236, 236, 236);
+      transition: 0.5s;
+    }
+    a{
+      text-decoration: none;
+      color: #0c419a;
+      font-size: 1.13rem;
+      text-align: center;
+      margin-left: 10px;
+    }
+    span{
+        color: black;
+        position: absolute;
+        left: 10px;
+      }
+   }
+ }
+
+  .sns{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    p{
+      font-size: 0.3rem;
+    }
+    i{
+      font-size: 30px;
+      margin-left: 15px;
+    }
+  }
+
+  .facebook{
+    color: rgb(38, 38, 93);
+  }
+
+.twitter{
+  color: rgb(0, 183, 255);
+}
+
+.linkedin{
+  color: rgb(92, 92, 230);
+}
+

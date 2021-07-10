@@ -1,0 +1,36 @@
+$sp: 770px;  // スマホ
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+  }
+
+  footer{
+    height: 200px;
+    border-top: 1px solid rgb(199, 188, 188);
+    padding-top: 60px;
+    p{
+      width: 63%;
+      margin: 0 auto;
+      small{
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    width: 63%;
+    justify-content: space-between;
+    a{
+      text-decoration: none;
+      font-size: 0.8rem;
+      color: rgb(199, 188, 188);
+      span{
+        margin-right: 9px;
+      }
+    }
+  }
