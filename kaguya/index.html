@@ -7,14 +7,17 @@
   <meta name="description" content="#">
   <title>家具屋 | HOME</title>
   <!-- css -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1><img src="./img/logo_header.png" alt="ロゴ"></h1>
-    <ul class="header-nav">
+    <h1>
+      <img class="pc" src="./img/logo_header.png" alt="ロゴ">
+      <img class="sp" src="./img/logo_header_sp.png" alt="ロゴ">
+    </h1>
+    <ul class="header-nav pc">
       <li>HOME</li>
       <li><a href="./news.html">NEWS</a></li>
       <li><a href="./recruit.html">RECRUIT</a></li>
@@ -23,7 +26,7 @@
   </header>
   <main>
     <div class="big-bg">
-      <h2 class="main-title">We propose a life.</h2>
+      <h2 class="main-title"><span>We</span> <span>propose</span> <span>a life.</span></h2>
     </div>
     <div class="container">
       <article class="self-introduction">
@@ -69,7 +72,8 @@
           <input type="text" placeholder="お名前">
           <input type="text" placeholder="メールアドレス">
           <textarea cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
-          <input type="submit" value="SEND">
+          <input type="submit" value="SEND" class="pc">
+          <input type="submit" value="Send" class="sp">
         </form>
       </section>
       <section class="recruit">
@@ -81,8 +85,8 @@
   </main>
   <footer>
     <div class="wrapper">
-      <img src="./img/logo_footer.png" alt="ロゴ">
-      <ul class="footer-nav">
+      <img src="./img/logo_footer@2x.png" alt="ロゴ">
+      <ul class="footer-nav pc">
         <li>HOME</li>
         <li><a href="./news.html">NEWS</a></li>
         <li><a href="./recruit.html">RECRUIT</a></li>
