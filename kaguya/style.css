@@ -6,10 +6,15 @@ html{
 body{
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
+  overflow-x: hidden;
 }
 
 /* レスポンシブ */
 .res{
+  display: none;
+}
+
+.sp{
   display: none;
 }
 
@@ -466,7 +471,7 @@ footer .wrapper img{
     display: none;
   }
 
-  .res{
+  .sp{
     display: block;
   }
 
@@ -474,16 +479,13 @@ footer .wrapper img{
   header{
     background-color: #918F89;
     display: block;
-    line-height: 56px;
-  }
-
-  header h1{
-    text-align: center;
-    height: 24px;
+    height: 56px;
   }
 
   header h1 img{
-    height: 100%;
+    height: 24px;
+    margin: 0 auto;
+    padding-top: 16px;
   }
 
   /* big-bg */
@@ -507,11 +509,16 @@ footer .wrapper img{
     background-color: rgba(255, 255, 255,0.6);
     letter-spacing: 1.95px;
   }
+
+  /* container */
+  .container{
+    padding: 0 24px;
+  }
  
   /* self-introduction */
   .self-introduction{
     flex-direction: column-reverse;
-    padding: 0 8.5px 0;
+    padding: 0;
   }
 
   .self-introduction .description{
@@ -522,6 +529,7 @@ footer .wrapper img{
     font-size: 2.1rem;
     letter-spacing: 2.1px;
     text-align: center;
+    font-weight: normal;
   }
 
   .description p{
@@ -529,20 +537,31 @@ footer .wrapper img{
     letter-spacing: 0.42px;
     text-align: center;
     margin-bottom: 24px;
+    line-height: 40px;
   }
 
   /* news */
   .news{
     padding: 0;
+    margin-bottom: 248px;
+  }
+
+  .news h3{
+    font-size: 2.5rem;
+    font-weight: normal;
   }
   .news .wrapper{
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .topic{
     width: 272px;
-    margin-bottom: 24px;
+  }
+
+  .topic:not(:last-child){
+    margin-bottom: 34px;
   }
 
   .topic .filter img{
@@ -559,13 +578,10 @@ footer .wrapper img{
     font-size: 1.8rem;
   }
   /* catalog-download */
-  .catalog-download{
-    padding: 0 24px;
-  }
-
   .catalog-download h3{
     font-size: 2.4rem;
     letter-spacing: 2.4px;
+    font-weight: normal;
   }
 
   .catalog-download p{
@@ -582,16 +598,22 @@ footer .wrapper img{
   /* contact */
   .contact{
     width: 286px;
-    padding: 0 45px;
+    margin: 0 auto; 
+    margin-bottom: 240px;
   }
 
   .contact h3{
     font-size: 2.4rem;
     letter-spacing: 2.4px;
+    font-weight: normal;
   }
 
   .contact form{
     width: 100%;
+  }
+
+  .contact form input{
+    border-radius: 11px;
   }
 
   .contact form input:last-child{
@@ -605,11 +627,14 @@ footer .wrapper img{
 
   .contact form textarea{
     height: 160px;
+    border-radius: 11px;
   }
   /* recruit */
   .recruit h3{
     font-size: 2.4rem;
     letter-spacing: 2.4px;
+    margin-bottom: 24px;
+    font-weight: normal;
   }
 
   .recruit p{
@@ -618,7 +643,7 @@ footer .wrapper img{
   }
 
   .recruit a{
-    font-size: 1.8rem;
+  font-size: 1.8rem;
   letter-spacing: 0.9px;
   color: #3B3B3B;
   opacity: 1;
